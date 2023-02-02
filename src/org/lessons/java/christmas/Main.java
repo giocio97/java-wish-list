@@ -24,8 +24,8 @@ public class Main {
 		wishList.add(desiderio);
 
 		System.out.println("la tua lista desideri è :  ");
-		for (int i = 0; i < wishList.size(); i++)
-			Collections.sort(wishList);
+
+		Collections.sort(wishList);
 		System.out.println(wishList);
 
 		s.close();
