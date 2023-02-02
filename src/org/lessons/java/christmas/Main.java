@@ -10,13 +10,17 @@ public class Main {
 		ArrayList<String> wishList = new ArrayList<String>();
 
 		Scanner s = new Scanner(System.in);
-		String desiderio;
+		String desiderio, sceltaUser;
 		do {
-			System.out.println("inserisci un desirerio: (enter per uscire):  ");
+			System.out.println("inserisci cosa desideri aggiungere alla tua wishlist:   ");
 			desiderio = s.nextLine();
-			if (!desiderio.equals(""))
+			System.out.println("vuoi  aggiungere altro? (si/no):   ");
+			sceltaUser = s.nextLine();
+
+			if (!sceltaUser.equals("no"))
 				wishList.add(desiderio);
-		} while (!desiderio.equals(""));
+		} while (!sceltaUser.equals("no"));
+		wishList.add(desiderio);
 
 		System.out.println("la tua lista desideri è :  ");
 		for (int i = 0; i < wishList.size(); i++)
