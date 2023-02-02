@@ -1,6 +1,7 @@
 package org.lessons.java.christmas;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Main {
@@ -24,7 +25,8 @@ public class Main {
 
 		System.out.println("la tua lista desideri è :  ");
 		for (int i = 0; i < wishList.size(); i++)
-			System.out.println(wishList.get(i));
+			Collections.sort(wishList);
+		System.out.println(wishList);
 
 		s.close();
 
