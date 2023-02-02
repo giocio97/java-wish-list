@@ -22,6 +22,8 @@ public class Main {
 		for (int i = 0; i < wishList.size(); i++)
 			System.out.println(wishList.get(i));
 
+		s.close();
+
 	}
 
 }
